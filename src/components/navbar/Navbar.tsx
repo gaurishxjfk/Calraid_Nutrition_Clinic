@@ -15,19 +15,14 @@ const menusItems = [
   "Contact Us",
 ];
 
-const Navbar = ({styles}: {styles?: string}) => {
+const Navbar = ({ styles }: { styles?: string }) => {
   const [open, setOpen] = useState(false);
-  const [isScroll, setIsScroll] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener('scroll', () => setIsScroll(true));
-    return window.removeEventListener('scroll', () => setIsScroll(true));
-  }, [])
-  console.log(isScroll)
+
   return (
     <nav
       className={cn(
-        "fixed py-3 px-[1em] md:px-[2em] lg:px-[2em] flex justify-between items-center bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 top-0 z-50 w-full"
+        "fixed py-3 px-[1em] md:px-[4em] lg:px-[8em] flex justify-between items-center bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 top-0 z-50 w-full"
       )}
     >
       <Image src={CalraidLogo} alt="logo" className="w-20" />
@@ -35,12 +30,12 @@ const Navbar = ({styles}: {styles?: string}) => {
         <HambergerMenu open={open} setOpen={setOpen} />
         <div
           className={`justify-between gap-4 md:gap-6 lg:gap-8
-                  text-emerald-300 sm:text-xl flex-col md:flex-row  bg-primary md:bg-transparent
+                  text-white md:text-[#7d9f3d] sm:text-xl flex-col md:flex-row  bg-primary md:bg-transparent
                     absolute right-0 md:relative transition-all duration-700
                     bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20 
                     rounded-lg px-5 py-3 ${
                       open
-                        ? "flex top-8 md:top-0 min-w-[10em] z-20 "
+                        ? "flex top-8 md:top-0 min-w-[20em] z-20 "
                         : "hidden md:flex"
                     }
                   `}

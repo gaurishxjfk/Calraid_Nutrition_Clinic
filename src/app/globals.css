@@ -60,3 +60,21 @@
     @apply bg-background text-foreground;
   }
 }
+
+.bg-backfeoung-image{
+  background: url('../../public/overlayBg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-side_left{
+  background: url('../../public/element_bg_1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-side_right{
+  background: url('../../public/element_bg_2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

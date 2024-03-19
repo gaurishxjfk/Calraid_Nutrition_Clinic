@@ -8,7 +8,7 @@ interface propType {
 const HambergerMenu: React.FC<propType> = ({open, setOpen}) => {
   return (
     <button
-    className={`text-white relative focus:outline-none flex flex-col gap-1 md:opacity-0 ${
+    className={`text-[#7d9f3d] relative focus:outline-none flex flex-col gap-1 md:opacity-0 ${
       open && "pr-2"
     }`}
     onClick={() => setOpen(!open)}
