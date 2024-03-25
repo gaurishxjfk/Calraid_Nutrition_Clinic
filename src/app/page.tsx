@@ -1,7 +1,9 @@
 "use client";
 import AboutDietition from "@/components/AboutDietition";
 import HowItWorks from "@/components/HowItWorks";
+import OurAchivements from "@/components/OurAchivements";
 import OffersComponent from "@/components/OurOffers";
+import Testimonial from "@/components/Testimonial";
 import WhatWeDo from "@/components/WhatWeDo";
 import Hero from "@/components/hero/Hero";
 
@@ -16,6 +18,8 @@ export default function Home() {
         <HowItWorks />
         <WhatWeDo />
         <AboutDietition />
+        <OurAchivements />
+        <Testimonial />
       </section>
     </>
   );

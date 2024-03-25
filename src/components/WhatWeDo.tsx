@@ -71,7 +71,6 @@ const plansArr = [
 const WhatWeDo = () => {
   const [startIndex, setStartIndex] = useState(0);
   const [cardsToShow, setCardsToShow] = useState(0);
-  const [screenSize, setScreenSize] = useState("");
 
   const nextSlide = () => {
     if (startIndex + cardsToShow < plansArr.length) {
@@ -88,19 +87,14 @@ const WhatWeDo = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.matchMedia("(max-width: 576px)").matches) {
-        setScreenSize("xs");
         setCardsToShow(1);
       } else if (window.matchMedia("(max-width: 768px)").matches) {
-        setScreenSize("sm");
         setCardsToShow(2);
       } else if (window.matchMedia("(max-width: 992px)").matches) {
-        setScreenSize("md");
         setCardsToShow(3);
       } else if (window.matchMedia("(max-width: 1200px)").matches) {
-        setScreenSize("lg");
         setCardsToShow(3);
       } else {
-        setScreenSize("xl");
         setCardsToShow(4);
       }
     };

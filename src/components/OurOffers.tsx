@@ -25,7 +25,7 @@ const OffersComponent = () => {
         </p>
       </div>
       <div className="flex flex-wrap gap-8 justify-center relative">
-        <div className="w-[80%] rounded-3xl absolute bg-[#1D440E] h-[15rem] bottom-0 -z-0 hidden lg:block"></div>
+        {/* <div className="w-[80%] rounded-3xl absolute bg-[#1D440E] h-[15rem] bottom-0 -z-0 hidden lg:block"></div> */}
         <OurOfferCard />
         <OurOfferCard />
         <OurOfferCard />

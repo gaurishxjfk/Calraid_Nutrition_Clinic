@@ -39,7 +39,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="flex mt-[5rem] pt-4 flex-col items-center justify-center md:flex-row">
+    <section className="flex mt-[5rem] pt-4 h-[30rem] overflow-hidden flex-col items-center justify-center md:flex-row">
       <div className="absolute md:relative md:w-1/2 z-30 w-full px-4 md:ml-12 md:mr-4 md:flex md:flex-col md:gap-4">
         <AnimatePresence>
           <motion.h1
